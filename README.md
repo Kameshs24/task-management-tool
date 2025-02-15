@@ -2,7 +2,7 @@ Task Management Tool 📝
 A responsive task management application built with React.js, TypeScript, Firebase Authentication, and Firestore.
 
 🚀 Live Demo
-🔗 [Live Project URL](https://task-management-tool-84bc6.web.app/tasks)
+🔗 https://task-management-tool-84bc6.web.app
 
 📌 Features Implemented
 User Authentication: Google Sign-In via Firebase.
