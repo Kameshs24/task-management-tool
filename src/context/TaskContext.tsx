@@ -22,6 +22,7 @@ interface Task {
   fileUrl?: string | null;
   attachments?: string[];
   activityLog?: { action: string; timestamp: string }[];
+  file?: File | null;
 }
 
 interface TaskContextType {

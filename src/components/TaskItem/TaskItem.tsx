@@ -13,7 +13,7 @@ interface TaskProps {
   viewType: "list" | "board";
 }
 
-const TaskItem: React.FC<TaskProps> = ({ id, title, description, dueDate, status, category, viewType }) => {
+const TaskItem: React.FC<TaskProps> = ({ id, title, dueDate, status, category, viewType }) => {
   const { updateTask, deleteTask, tasks, setEditingTask } = useTasks();
   const [taskStatus, setTaskStatus] = useState(status);
   const [showMenu, setShowMenu] = useState(false);

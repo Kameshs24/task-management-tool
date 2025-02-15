@@ -41,6 +41,7 @@ const TaskModal: React.FC<TaskModalProps> = ({ isOpen, closeModal }) => {
         status,
         category,
         userId: user.uid,
+        file, // Add file here if you want to use it in task creation
       });
 
       setTitle("");
@@ -74,7 +75,6 @@ const TaskModal: React.FC<TaskModalProps> = ({ isOpen, closeModal }) => {
             required
           />
 
-          
           <div className="description-container">
             <textarea
               placeholder="Description"
@@ -89,9 +89,7 @@ const TaskModal: React.FC<TaskModalProps> = ({ isOpen, closeModal }) => {
             <div className="char-count">{description.length}/300 characters</div>
           </div>
 
-          
           <div className="form-group">
-            
             <div className="category-section">
               <label>Task Category*</label>
               <div className="category-buttons">
@@ -112,7 +110,6 @@ const TaskModal: React.FC<TaskModalProps> = ({ isOpen, closeModal }) => {
               </div>
             </div>
 
-            
             <div className="due-date-section">
               <label>Due on*</label>
               <input
@@ -123,7 +120,6 @@ const TaskModal: React.FC<TaskModalProps> = ({ isOpen, closeModal }) => {
               />
             </div>
 
-            
             <div className="status-section">
               <label>Task Status*</label>
               <select value={status} onChange={(e) => setStatus(e.target.value)} required>
@@ -135,7 +131,6 @@ const TaskModal: React.FC<TaskModalProps> = ({ isOpen, closeModal }) => {
             </div>
           </div>
 
-          
           <div className="attachment-section">
             <label>Attachment</label>
             <div className="file-upload">
@@ -148,10 +143,11 @@ const TaskModal: React.FC<TaskModalProps> = ({ isOpen, closeModal }) => {
               <label htmlFor="file-input" className="file-drop">
                 Drop your files here or <span className="update-link">Update</span>
               </label>
+              {/* Show file name if a file is selected */}
+              {file && <div className="file-name">{file.name}</div>}
             </div>
           </div>
 
-         
           <div className="button-group">
             <button type="button" className="cancel-btn" onClick={closeModal}>
               Cancel

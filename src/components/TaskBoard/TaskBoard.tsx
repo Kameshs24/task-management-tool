@@ -2,7 +2,6 @@ import React from "react";
 import { useTasks } from "../../context/TaskContext";
 import TaskItem from "../TaskItem/TaskItem";
 import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
-import TaskEditModal from "../TaskEditModal/TaskEditModal";
 import "./TaskBoard.css";
 
 const TaskBoard: React.FC = () => {
