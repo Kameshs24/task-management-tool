@@ -135,7 +135,7 @@
   }
 }
 
-/* For smaller screens (768px) */
+
 @media (max-width: 768px) {
   .column-header {
     font-size: 12px; 
@@ -164,7 +164,7 @@
   }
 }
 
-/* For very small screens (480px) */
+
 @media (max-width: 480px) {
   .board-container {
     gap: 5px;
