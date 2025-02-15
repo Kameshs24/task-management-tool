@@ -1,0 +1,255 @@
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  width: 674px;
+  height: auto;
+  position: relative;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.modal-header h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+}
+
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+textarea {
+  height: 80px;
+  resize: none;
+}
+
+
+.description-container {
+  position: relative;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  background: white;
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: 100%;
+  height: 90px; 
+  border: none;
+  outline: none;
+  resize: none;
+  font-size: 14px;
+  padding-bottom: 30px;
+}
+
+.text-editor {
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  display: flex;
+  gap: 10px;
+  background: white;
+  padding: 5px;
+}
+
+.char-count {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  font-size: 12px;
+  color: gray;
+}
+
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.category-section,
+.due-date-section,
+.status-section {
+  width: 30%;
+}
+
+.form-group label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #00000099;
+  display: block;
+  margin-bottom: 5px;
+}
+
+
+.category-buttons {
+  display: flex;
+  gap: 6px;
+}
+
+.category-buttons button {
+  padding: 5px 15px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  cursor: pointer;
+  background: #f3f3f3;
+  transition: all 0.3s ease-in-out;
+}
+
+.category-buttons button.active {
+  background: #7B1984;
+  color: white;
+  border-color: #7B1984;
+}
+
+
+.attachment-section {
+  margin-top: 15px;
+}
+
+.file-upload {
+  width: 100%;
+  padding: 10px;
+  border: 1px dashed #ccc;
+  text-align: center;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.file-upload:hover {
+  border-color: #7B1984;
+}
+
+.update-link {
+  color: #7B1984;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+
+.cancel-btn {
+  background: #f3f3f3;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.cancel-btn:hover {
+  background: #e0e0e0;
+}
+
+
+.create-btn {
+  background: #7B1984;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.create-btn.inactive {
+  background: #be86c4;
+  cursor: not-allowed;
+}
+
+.create-btn:hover:not(.inactive) {
+  background: #5a1466;
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .form-group {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .category-section,
+  .due-date-section,
+  .status-section {
+    width: 100%;
+  }
+
+  .button-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cancel-btn,
+  .create-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-header h2 {
+    font-size: 18px;
+  }
+
+  input,
+  textarea,
+  select {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .category-buttons button {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}

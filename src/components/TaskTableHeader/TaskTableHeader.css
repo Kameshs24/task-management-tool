@@ -1,0 +1,34 @@
+.task-table-header {
+  display: grid;
+  grid-template-columns: 4.3fr 3fr 3.2fr 2.3fr 1fr; 
+  background-color: #fff;
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #333;
+  margin-top: 10px;
+  
+}
+
+.column {
+  text-align: left;
+  font-weight: 500;
+}
+
+.table-header-divider {
+  border: none;
+  height: 1px;
+  background-color: #0000001A;
+  margin-top: 20px;
+  margin-bottom: 6px;
+}
+
+@media (max-width: 768px) {
+  .table-header-divider{
+    display: none;
+  }
+
+  .task-table-header{
+    display: none;
+  }
+}
+

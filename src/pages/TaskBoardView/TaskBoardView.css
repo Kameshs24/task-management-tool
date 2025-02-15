@@ -1,0 +1,18 @@
+.task-view-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+
+.header {
+  width: 100%;
+  padding: 15px 20px;
+  background-color: #ffffff !important;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
