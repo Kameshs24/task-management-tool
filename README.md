@@ -2,7 +2,7 @@ Task Management Tool 📝
 A responsive task management application built with React.js, TypeScript, Firebase Authentication, and Firestore.
 
 🚀 Live Demo
-🔗 https://task-management-tool-84bc6.web.app
+🔗 [Live Project URL](https://task-management-tool-84bc6.web.app)
 
 📌 Features Implemented
 User Authentication: Google Sign-In via Firebase.
@@ -18,11 +18,8 @@ Responsive UI: Works seamlessly across mobile, tablet, and desktop devices.
 Frontend: React.js (TypeScript), React Query, Firebase
 Backend: Firebase Firestore
 Authentication: Firebase Authentication (Google Sign-In)
-Deployment: Firebase Hosting
+Deployment: Vercel / Netlify / Firebase Hosting
 ⚙️ How to Run the Project Locally
-Prerequisites
-Node.js (version 16 or higher)
-npm (version 8 or higher)
 1️⃣ Clone the repository
 
 bash
@@ -37,11 +34,11 @@ Copy
 Edit
 npm install
 3️⃣ Set up Firebase
-
 Go to Firebase Console.
 Create a project and enable Firestore & Authentication (Google Sign-In).
 Get your Firebase config and create a .env file in the root folder:
-bash
+
+env
 Copy
 Edit
 REACT_APP_FIREBASE_API_KEY=your-api-key
@@ -56,28 +53,28 @@ bash
 Copy
 Edit
 npm run dev
-Your app will run at http://localhost:5173/.
+Your app will run at http://localhost:5173/ (if using Vite).
 
-💬 Challenges Faced & Solutions
+🧑‍💻 Challenges Faced & Solutions
 1️⃣ Firebase Authentication Issues
-
 Problem: Firebase authentication setup was confusing.
-Solution: Followed Firebase docs, enabled Google Sign-In, and tested with dummy accounts.
+✅ Solution: Read Firebase docs, enabled Google Sign-In, and tested with dummy accounts.
+
 2️⃣ State Management
-
 Problem: Managing task states globally was complex.
-Solution: Used React Context + React Query for optimized state updates.
-3️⃣ Drag & Drop Implementation
+✅ Solution: Used React Context + React Query for optimized state updates.
 
+3️⃣ Drag & Drop Implementation
 Problem: Tasks were not updating in real-time when dragged.
-Solution: Used react-beautiful-dnd and ensured Firestore state was updated properly.
+✅ Solution: Used react-beautiful-dnd and updated Firestore state properly.
+
 📡 Deployment
 This project is deployed on Firebase Hosting.
-🔗 https://task-management-tool-84bc6.web.app/tasks
+🔗 [Live Project URL](https://task-management-tool-84bc6.web.app)
 
 📬 Contact
 👤 Kamesh S
 📧 Email: kameshs662@gmail.com
-📍 Bangalore, India
+📍 Location: Bangalore, India
 
-Feel free to customize and add more details if necessary!
+Feel free to reach out if you need any further modifications!
