@@ -1,55 +1,80 @@
-<<<<<<< HEAD
-# React + TypeScript + Vite
+Task Management Tool 📝
+A responsive task management application built with React.js, TypeScript, Firebase Authentication, and Firestore.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Live Demo
+🔗 [Live Project URL](https://task-management-tool-84bc6.web.app)
 
-Currently, two official plugins are available:
+📌 Features Implemented
+User Authentication: Google Sign-In via Firebase.
+Task Management: Create, edit, delete tasks.
+Categories & Due Dates: Organize tasks with categories and deadlines.
+Task Filtering & Sorting: Sort tasks by due date, status, and categories.
+Task History: Track all task updates and changes.
+Drag and Drop: Reorder tasks using drag-and-drop functionality.
+Batch Actions: Perform bulk operations on tasks.
+Multiple Views: Switch between Board and List views.
+Responsive UI: Works seamlessly across mobile, tablet, and desktop devices.
+🛠 Tech Stack
+Frontend: React.js (TypeScript), React Query, Firebase
+Backend: Firebase Firestore
+Authentication: Firebase Authentication (Google Sign-In)
+Deployment: Vercel / Netlify / Firebase Hosting
+⚙️ How to Run the Project Locally
+1️⃣ Clone the repository
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+bash
+Copy
+Edit
+git clone https://github.com/YOUR_USERNAME/task-management-tool.git
+cd task-management-tool
+2️⃣ Install dependencies
 
-## Expanding the ESLint configuration
+bash
+Copy
+Edit
+npm install
+3️⃣ Set up Firebase
+Go to Firebase Console.
+Create a project and enable Firestore & Authentication (Google Sign-In).
+Get your Firebase config and create a .env file in the root folder:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+env
+Copy
+Edit
+REACT_APP_FIREBASE_API_KEY=your-api-key
+REACT_APP_FIREBASE_AUTH_DOMAIN=your-auth-domain
+REACT_APP_FIREBASE_PROJECT_ID=your-project-id
+REACT_APP_FIREBASE_STORAGE_BUCKET=your-storage-bucket
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your-messaging-sender-id
+REACT_APP_FIREBASE_APP_ID=your-app-id
+4️⃣ Run the development server
 
-- Configure the top-level `parserOptions` property like this:
+bash
+Copy
+Edit
+npm run dev
+Your app will run at http://localhost:5173/ (if using Vite).
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+🧑‍💻 Challenges Faced & Solutions
+1️⃣ Firebase Authentication Issues
+Problem: Firebase authentication setup was confusing.
+✅ Solution: Read Firebase docs, enabled Google Sign-In, and tested with dummy accounts.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+2️⃣ State Management
+Problem: Managing task states globally was complex.
+✅ Solution: Used React Context + React Query for optimized state updates.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+3️⃣ Drag & Drop Implementation
+Problem: Tasks were not updating in real-time when dragged.
+✅ Solution: Used react-beautiful-dnd and updated Firestore state properly.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
-=======
-# task-management-tool
-A responsive task management application built with **React.js, TypeScript, Firebase Authentication, and Firestore**. 
->>>>>>> 861cdeed0cd1aab809cb874c163eb2abf86b56f5
+📡 Deployment
+This project is deployed on Firebase Hosting.
+🔗 [Live Project URL](https://task-management-tool-84bc6.web.app)
+
+📬 Contact
+👤 Kamesh S
+📧 Email: kameshs662@gmail.com
+📍 Location: Bangalore, India
+
+Feel free to reach out if you need any further modifications!
