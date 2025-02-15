@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -48,3 +49,7 @@ export default tseslint.config({
   },
 })
 ```
+=======
+# task-management-tool
+A responsive task management application built with **React.js, TypeScript, Firebase Authentication, and Firestore**. 
+>>>>>>> 861cdeed0cd1aab809cb874c163eb2abf86b56f5
